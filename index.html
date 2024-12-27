@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlockVote - Empowering Decentralized Decisions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">BlockVote</a>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Empowering Decentralized Decisions</h1>
+      <p>
+        BlockVote ensures secure, transparent, and community-driven
+        decision-making for all your projects.
+      </p>
+      <button onclick="openWalletPopup()">Connect Wallet</button>
+    </section>
+
+    <section id="features" class="features">
+      <div class="feature">
+        <h3>Create Proposals</h3>
+        <p>Submit ideas effortlessly and gather community feedback.</p>
+      </div>
+      <div class="feature">
+        <h3>Equal Voting Rights</h3>
+        <p>Guarantee fairness with a one-person-one-vote system.</p>
+      </div>
+      <div class="feature">
+        <h3>Real-Time Results</h3>
+        <p>Track outcomes instantly as votes are tallied.</p>
+      </div>
+    </section>
+
+    <div class="overlay" id="overlay" onclick="closeWalletPopup()"></div>
+
+    <div class="wallet-popup" id="walletPopup">
+      <h3>Select a Wallet</h3>
+      <button onclick="alert('MetaMask Connected!')">MetaMask</button>
+      <button onclick="alert('WalletConnect Connected!')">WalletConnect</button>
+      <button onclick="closeWalletPopup()">Cancel</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 BlockVote. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
